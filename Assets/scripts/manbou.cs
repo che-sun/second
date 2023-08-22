@@ -22,7 +22,7 @@ public class manbou : MonoBehaviour
         if (Input.GetKey(KeyCode.A) == true)
         {
             rb.velocity = new Vector2(-10, 0);
-            sr.flipX= false;
+            sr.flipX = false;
         }
         if (Input.GetKey(KeyCode.S) == true)
         {
