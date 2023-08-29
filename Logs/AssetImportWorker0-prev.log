@@ -130,7 +130,7 @@ Domain Reload Profiling:
 			RebuildScriptCaches (83ms)
 			SetupLoadedEditorAssemblies (721ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (123ms)
 				BeforeProcessingInitializeOnLoad (145ms)
@@ -162,3 +162,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 582735.685548 seconds.
+  path: Assets/images/faa97b28ed5c9a7e.mp4
+  artifactKey: Guid(3b81bb0b3fe1b204d8700fe50e086db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/faa97b28ed5c9a7e.mp4 using Guid(3b81bb0b3fe1b204d8700fe50e086db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6968f0a970f2bbceb64f8eef3d9c3944') in 0.063022 seconds 
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/images/D.mp4
+  artifactKey: Guid(ec2e8cf5afc2b6846bd53ff1730ec15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/D.mp4 using Guid(ec2e8cf5afc2b6846bd53ff1730ec15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8518f0889aabe6fca3285ff4adfc6f46') in 0.012074 seconds 
