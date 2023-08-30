@@ -42,5 +42,9 @@ public class um : MonoBehaviour
         {
             siin_text.text = "小魚に衝突して顔面を複雑骨折して死んだ。じゃあお前普段どうやって飯食ってんだよ。";
         }
+        if (gm.sibouflug == "buble")
+        {
+            siin_text.text = "泡が目に入ったストレスで死んだ。お前まかり間違っても日本にだけは来るなよ。";
+        }
     }
 }

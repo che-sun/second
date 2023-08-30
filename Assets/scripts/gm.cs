@@ -25,6 +25,10 @@ public class gm : MonoBehaviour
         manboutrans = player.GetComponent<Transform>();
         time = GameObject.Find("time");
         time_text = time.GetComponent<Text>();
+        for (int a = -20; a >= -420; a = a - 20)
+        {
+            Instantiate(bubleblock, new Vector2(a, -4.2f), Quaternion.Euler(0, 0, 0));
+        }
         StartCoroutine("sharkgo");
         StartCoroutine("fishgo");
     }
@@ -71,11 +75,11 @@ public class gm : MonoBehaviour
             manboupos = manboutrans.position;
                 yield return new WaitForSeconds(5);
                 decidepos();
-                Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[0] * 3), Quaternion.Euler(0, 0, 90));
+                Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[0] * 3), Quaternion.Euler(0, 0, 0));
                 yield return new WaitForSeconds(1);
-                Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[1] * 3), Quaternion.Euler(0, 0, 90));
+                Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[1] * 3), Quaternion.Euler(0, 0, 0));
                 yield return new WaitForSeconds(1);
-                Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[2] * 3), Quaternion.Euler(0, 0, 90));
+                Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[2] * 3), Quaternion.Euler(0, 0, 0));
                 fishpos.Clear();
         }
         
@@ -84,9 +88,9 @@ public class gm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
         if (sibouflug == "")
         {
+            timer += Time.deltaTime;
             time_text.text = "É^ÉCÉÄÅF" + timer.ToString("f2");
         }
     }
