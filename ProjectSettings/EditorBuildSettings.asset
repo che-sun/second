@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/gameover.unity
     guid: b354bac1464a2a147a26bff4ec58ec94
+  - enabled: 1
+    path: Assets/Scenes/collection.unity
+    guid: fb6142fa6c9ef0a479db2d272bd79684
+  - enabled: 1
+    path: Assets/Scenes/Cregit.unity
+    guid: b3c8595e18e683c4e89afeea673dc32f
   m_configObjects: {}
