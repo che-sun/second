@@ -17,7 +17,7 @@ public class shark : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector2(-10, 0);
+        rb.velocity = new Vector2(-20, 0);
     }
     void OnTriggerEnter2D(Collider2D other)
     {

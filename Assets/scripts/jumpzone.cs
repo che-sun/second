@@ -19,6 +19,10 @@ public class jumpzone : MonoBehaviour
             gm.sibouflug = "jump";
             SceneManager.LoadScene("gameover");
         }
+        if (other.CompareTag("buble"))
+        {
+            Destroy(other.gameObject);
+        }
     }
     void Update()
     {
