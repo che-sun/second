@@ -5,10 +5,14 @@ using UnityEngine;
 public class bubleblock : MonoBehaviour
 {
     List<int> bublepos = new List<int>();
-    GameObject buble;
+    GameObject abuble;
+    GameObject bbuble;
+    GameObject cbuble;
     void Start()
     {
-        buble = (GameObject)Resources.Load("buble");
+        abuble = (GameObject)Resources.Load("bigbuble");
+        bbuble = (GameObject)Resources.Load("midbuble");
+        cbuble = (GameObject)Resources.Load("smallbuble");
         StartCoroutine("bublegenerator");
     }
     void decidepos()
@@ -33,11 +37,11 @@ public class bubleblock : MonoBehaviour
         {
             yield return new WaitForSeconds(5);
             decidepos();
-            Instantiate(buble, new Vector2(this.gameObject.transform.position.x + bublepos[0] * 0.7f, -3.8f), Quaternion.Euler(0, 0, 0));
+            Instantiate(abuble, new Vector2(this.gameObject.transform.position.x + bublepos[0] * 0.7f, -3.8f), Quaternion.Euler(0, 0, 0));
             yield return new WaitForSeconds(1);
-            Instantiate(buble, new Vector2(this.gameObject.transform.position.x + bublepos[1] * 0.7f, -3.8f), Quaternion.Euler(0, 0, 0));
+            Instantiate(bbuble, new Vector2(this.gameObject.transform.position.x + bublepos[1] * 0.7f, -3.8f), Quaternion.Euler(0, 0, 0));
             yield return new WaitForSeconds(1);
-            Instantiate(buble, new Vector2(this.gameObject.transform.position.x + bublepos[2] * 0.7f, -3.8f), Quaternion.Euler(0, 0, 0));
+            Instantiate(cbuble, new Vector2(this.gameObject.transform.position.x + bublepos[2] * 0.7f, -3.8f), Quaternion.Euler(0, 0, 0));
             bublepos.Clear();
         }
 

@@ -7,6 +7,8 @@ public class um : MonoBehaviour
 {
     GameObject gamemaster;
     GameObject siin;
+    GameObject score;
+    Text score_text;
     Text siin_text;
     gm gm;
 
@@ -14,13 +16,16 @@ public class um : MonoBehaviour
     {
         gamemaster = GameObject.Find("gamemaster");
         siin = GameObject.Find("siin");
+        score = GameObject.Find("time");
         siin_text = siin.GetComponent<Text>();
+        score_text = score.GetComponent<Text>();
         gm = gamemaster.GetComponent<gm>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        score_text.text = "タイム：" + gm.timer;
         if (Input.GetMouseButton(0))
         {
             Destroy(gamemaster);
@@ -46,5 +51,10 @@ public class um : MonoBehaviour
         {
             siin_text.text = "泡が目に入ったストレスで死んだ。お前まかり間違っても日本にだけは来るなよ。";
         }
+        if (gm.sibouflug == "human")
+        {
+            siin_text.text = "人間に釣られて死んだ。ヒトカスなんぞにやられおって情けないぞ勇者マン＝ボウ！";
+        }
+
     }
 }

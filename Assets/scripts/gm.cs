@@ -5,11 +5,12 @@ using UnityEngine.UI;
 public class gm : MonoBehaviour
 {
     public string sibouflug="";
-    float timer=0;
+    public float timer=0;
     GameObject shark;
     GameObject fish;
     GameObject bubleblock;
     GameObject player;
+    GameObject human;
     Transform manboutrans;
     GameObject time;
     Text time_text;
@@ -21,6 +22,7 @@ public class gm : MonoBehaviour
         shark = (GameObject)Resources.Load("shark");
         fish = (GameObject)Resources.Load("fish");
         bubleblock = (GameObject)Resources.Load("bubleblock");
+        human = (GameObject)Resources.Load("human");
         player = GameObject.Find("manbou");
         manboutrans = player.GetComponent<Transform>();
         time = GameObject.Find("time");
@@ -29,8 +31,10 @@ public class gm : MonoBehaviour
         {
             Instantiate(bubleblock, new Vector2(a, -4.2f), Quaternion.Euler(0, 0, 0));
         }
+        
         StartCoroutine("sharkgo");
         StartCoroutine("fishgo");
+        StartCoroutine("humango");
     }
     void decidepos()
     {
@@ -58,7 +62,7 @@ public class gm : MonoBehaviour
                 yield break;
             }
             manboupos = manboutrans.position;
-                Instantiate(shark, new Vector2(manboupos.x + 50, 0), Quaternion.Euler(0, 0, 90));
+                Instantiate(shark, new Vector2(manboupos.x + 50, 0), Quaternion.Euler(0, 0, 0));
                 yield return new WaitForSeconds(10);
         }
             
@@ -73,19 +77,31 @@ public class gm : MonoBehaviour
                 yield break;
             }
             manboupos = manboutrans.position;
-                yield return new WaitForSeconds(5);
-                decidepos();
-                Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[0] * 3), Quaternion.Euler(0, 0, 0));
-                yield return new WaitForSeconds(1);
-                Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[1] * 3), Quaternion.Euler(0, 0, 0));
-                yield return new WaitForSeconds(1);
-                Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[2] * 3), Quaternion.Euler(0, 0, 0));
-                fishpos.Clear();
+            yield return new WaitForSeconds(5);
+            decidepos();
+            Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[0] * 3), Quaternion.Euler(0, 0, 0));
+            yield return new WaitForSeconds(1);
+            Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[1] * 3), Quaternion.Euler(0, 0, 0));
+            yield return new WaitForSeconds(1);
+            Instantiate(fish, new Vector2(manboupos.x - 50, fishpos[2] * 3), Quaternion.Euler(0, 0, 0));
+            fishpos.Clear();
+        }
+    }
+    IEnumerator humango()
+    {
+        yield return new WaitForSeconds(10);
+        while (true)
+        {
+            if (sibouflug != "")
+            {
+                yield break;
+            }
+            Instantiate(human, new Vector2(manboupos.x-7, 10), Quaternion.Euler(0, 0, 0));
+            yield return new WaitForSeconds(15);
         }
         
 
     }
-    // Update is called once per frame
     void Update()
     {
         if (sibouflug == "")
