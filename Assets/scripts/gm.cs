@@ -6,6 +6,8 @@ public class gm : MonoBehaviour
 {
     public string sibouflug="";
     public float timer=0;
+    public string namepack;
+    public string commentpack;
     GameObject shark;
     GameObject fish;
     GameObject bubleblock;

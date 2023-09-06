@@ -257,6 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9781b678844024448e68b88c167b5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  muteki: 0
 --- !u!212 &674869243
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -452,6 +453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sibouflug: 
+  timer: 0
 --- !u!1 &760386922
 GameObject:
   m_ObjectHideFlags: 0

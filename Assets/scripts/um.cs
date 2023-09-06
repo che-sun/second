@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +12,7 @@ public class um : MonoBehaviour
     Text siin_text;
     gm gm;
 
+    bool flug=true;
     void Start()
     {
         gamemaster = GameObject.Find("gamemaster");
@@ -21,40 +22,41 @@ public class um : MonoBehaviour
         score_text = score.GetComponent<Text>();
         gm = gamemaster.GetComponent<gm>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        score_text.text = "ƒ^ƒCƒ€F" + gm.timer;
-        if (Input.GetMouseButton(0))
+        score_text.text = "ã‚¿ã‚¤ãƒ ï¼š" + gm.timer;
+        if (Input.GetMouseButton(0)&&flug==true)
         {
-            Destroy(gamemaster);
-            SceneManager.LoadScene("opening");
+            flug = false;
+            SceneManager.LoadScene("record");
         }
-        if (gm.sibouflug == "cold")
+        if (gm.sibouflug == "cold" && flug == true)
         {
-            siin_text.text = "Š¦‚·‚¬‚Ä€‚ñ‚¾Bã‚·‚¬www";
+            siin_text.text = "å¯’ã™ãã¦æ­»ã‚“ã ã€‚å¼±ã™ãwww";
         }
-        if (gm.sibouflug == "jump")
+        if (gm.sibouflug == "jump" && flug == true)
         {
-            siin_text.text = "Šñ¶’‚ğ—‚Æ‚»‚¤‚Æ‚µ‚Ä…–Ê‚©‚çƒWƒƒƒ“ƒv‚µA’……‚ÌÛ‚ÌÕŒ‚‚Å€‚ñ‚¾B”n­‚¾‚ËB";
+            siin_text.text = "å¯„ç”Ÿè™«ã‚’è½ã¨ãã†ã¨ã—ã¦æ°´é¢ã‹ã‚‰ã‚¸ãƒ£ãƒ³ãƒ—ã—ã€ç€æ°´ã®éš›ã®è¡æ’ƒã§æ­»ã‚“ã ã€‚é¦¬é¹¿ã ã­ã€‚";
         }
-        if (gm.sibouflug == "shark")
+        if (gm.sibouflug == "shark" && flug == true)
         {
-            siin_text.text = "ƒTƒ‚ÉH‚í‚ê‚Ä€‚ñ‚¾B‚±‚Ì¢‚Íã“÷‹­H‚¾‚©‚ç‚ËB‚µ‚å‚¤‚ª‚È‚¢‚ËB";
+            siin_text.text = "ã‚µãƒ¡ã«é£Ÿã‚ã‚Œã¦æ­»ã‚“ã ã€‚ã“ã®ä¸–ã¯å¼±è‚‰å¼·é£Ÿã ã‹ã‚‰ã­ã€‚ã—ã‚‡ã†ãŒãªã„ã­ã€‚";
         }
-        if (gm.sibouflug == "fish")
+        if (gm.sibouflug == "fish" && flug == true)
         {
-            siin_text.text = "¬‹›‚ÉÕ“Ë‚µ‚ÄŠç–Ê‚ğ•¡GœÜ‚µ‚Ä€‚ñ‚¾B‚¶‚á‚ ‚¨‘O•’i‚Ç‚¤‚â‚Á‚Ä”ÑH‚Á‚Ä‚ñ‚¾‚æB";
+            siin_text.text = "å°é­šã«è¡çªã—ã¦é¡”é¢ã‚’è¤‡é›‘éª¨æŠ˜ã—ã¦æ­»ã‚“ã ã€‚ã˜ã‚ƒã‚ãŠå‰æ™®æ®µã©ã†ã‚„ã£ã¦é£¯é£Ÿã£ã¦ã‚“ã ã‚ˆã€‚";
         }
-        if (gm.sibouflug == "buble")
+        if (gm.sibouflug == "buble" && flug == true)
         {
-            siin_text.text = "–A‚ª–Ú‚É“ü‚Á‚½ƒXƒgƒŒƒX‚Å€‚ñ‚¾B‚¨‘O‚Ü‚©‚èŠÔˆá‚Á‚Ä‚à“ú–{‚É‚¾‚¯‚Í—ˆ‚é‚È‚æB";
+            siin_text.text = "æ³¡ãŒç›®ã«å…¥ã£ãŸã‚¹ãƒˆãƒ¬ã‚¹ã§æ­»ã‚“ã ã€‚ãŠå‰ã¾ã‹ã‚Šé–“é•ã£ã¦ã‚‚æ—¥æœ¬ã«ã ã‘ã¯æ¥ã‚‹ãªã‚ˆã€‚";
         }
-        if (gm.sibouflug == "human")
+        if (gm.sibouflug == "human" && flug == true)
         {
-            siin_text.text = "lŠÔ‚É’Ş‚ç‚ê‚Ä€‚ñ‚¾BƒqƒgƒJƒX‚È‚ñ‚¼‚É‚â‚ç‚ê‚¨‚Á‚Äî‚¯‚È‚¢‚¼—EÒƒ}ƒ“ƒ{ƒEI";
+            siin_text.text = "äººé–“ã«é‡£ã‚‰ã‚Œã¦æ­»ã‚“ã ã€‚ãƒ’ãƒˆã‚«ã‚¹ãªã‚“ãã«ã‚„ã‚‰ã‚ŒãŠã£ã¦æƒ…ã‘ãªã„ãå‹‡è€…ãƒãƒ³ï¼ãƒœã‚¦ï¼";
         }
-
+        if (gm.sibouflug == "hitode" && flug == true)
+        {
+            siin_text.text = "ãƒã€‡ã‚ªã®ã‚¹ã‚¿ãƒ¼ã ã¨æ€ã£ã¡ã‚ƒã£ãŸã‚ï¼Ÿwwwã–ã‚ãã‚“ã­ã‡ãˆã‚“wwãƒ’ãƒˆãƒ‡ã§ã—ãŸã‚ãwã–ãã“â™¡ã–ãã“â™¡";
+        }
     }
 }

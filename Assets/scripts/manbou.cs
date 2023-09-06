@@ -7,6 +7,7 @@ public class manbou : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer sr=null;
     GameObject player;
+    public bool muteki = false;
     void Start()
     {
         player = GameObject.Find("manbou");
@@ -54,5 +55,10 @@ public class manbou : MonoBehaviour
     void Update()
     {
         playercontroller();
+        if (muteki == true)
+        {
+            this.tag = "muteki";
+        }
+       
     }
 }

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cregit.unity
     guid: b3c8595e18e683c4e89afeea673dc32f
+  - enabled: 1
+    path: Assets/Scenes/record.unity
+    guid: c6d0e952d4fe168489ba32a5339ca58d
   m_configObjects: {}

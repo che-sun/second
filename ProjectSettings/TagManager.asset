@@ -9,6 +9,7 @@ TagManager:
   - fish
   - human
   - buble
+  - muteki
   layers:
   - Default
   - TransparentFX
