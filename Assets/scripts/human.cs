@@ -9,9 +9,13 @@ public class human : MonoBehaviour
     GameObject gamemaster;
     gm gm;
     Rigidbody2D rb;
+    Transform manboutrans;
+    GameObject player;
     void Start()
     {
         gamemaster = GameObject.Find("gamemaster");
+        player = GameObject.Find("manbou");
+        manboutrans = player.GetComponent<Transform>();
         gm = gamemaster.GetComponent<gm>();
         rb = this.gameObject.GetComponent<Rigidbody2D>();
     }
@@ -38,7 +42,8 @@ public class human : MonoBehaviour
         if (other.CompareTag("manbou"))
         {
             gm.sibouflug = "human";
-            SceneManager.LoadScene("gameover");
+            gm.siboubasyo = manboutrans.position;
+            SceneManager.LoadScene("sibougenba");
         }
     }
 }

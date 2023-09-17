@@ -28,6 +28,7 @@ public class submit : MonoBehaviour
         commentinputField = commentObject.GetComponent<InputField>();
         score = GameObject.Find("time");
         score_text = score.GetComponent<Text>();
+        bgmflug.loopflug = true;
     }
     void Update()
     {

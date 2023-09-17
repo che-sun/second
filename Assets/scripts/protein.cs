@@ -22,6 +22,11 @@ public class protein : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    IEnumerator proteinjyumyou()
+    {
+        yield return new WaitForSeconds(30);
+        Destroy(this.gameObject);
+    }
     // Update is called once per frame
     void Update()
     {

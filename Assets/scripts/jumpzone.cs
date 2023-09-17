@@ -6,10 +6,14 @@ public class jumpzone : MonoBehaviour
 {
     GameObject gamemaster;
     gm gm;
+    Transform manboutrans;
+    GameObject player;
     void Start()
     {
         gamemaster = GameObject.Find("gamemaster");
         gm = gamemaster.GetComponent<gm>();
+        player = GameObject.Find("manbou");
+        manboutrans = player.GetComponent<Transform>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -17,7 +21,8 @@ public class jumpzone : MonoBehaviour
         if (other.CompareTag("manbou"))
         {
             gm.sibouflug = "jump";
-            SceneManager.LoadScene("gameover");
+            gm.siboubasyo = manboutrans.position;
+            SceneManager.LoadScene("sibougenba");
         }
         if (other.CompareTag("buble"))
         {

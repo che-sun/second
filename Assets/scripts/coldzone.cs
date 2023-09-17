@@ -7,10 +7,14 @@ public class coldzone : MonoBehaviour
     float timer;
     GameObject gamemaster;
     gm gm;
+    Transform manboutrans;
+    GameObject player;
     void Start()
     {
         gamemaster = GameObject.Find("gamemaster");
         gm = gamemaster.GetComponent<gm>();
+        player = GameObject.Find("manbou");
+        manboutrans = player.GetComponent<Transform>();
     }
     void OnTriggerStay2D(Collider2D other)
     {
@@ -33,7 +37,8 @@ public class coldzone : MonoBehaviour
         if (timer >= 5)
         {
             gm.sibouflug = "cold";
-            SceneManager.LoadScene("gameover");
+            gm.siboubasyo = manboutrans.position;
+            SceneManager.LoadScene("sibougenba");
 
         } 
     }

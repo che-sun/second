@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/record.unity
     guid: c6d0e952d4fe168489ba32a5339ca58d
+  - enabled: 1
+    path: Assets/Scenes/sibougenba.unity
+    guid: 135759f885c8b9a44834a27401bd1319
   m_configObjects: {}
