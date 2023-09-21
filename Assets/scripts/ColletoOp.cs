@@ -6,8 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class ColletoOp : MonoBehaviour
 {
-    public void OnClick()
+   
+public void OnClick()
     {
-        SceneManager.LoadScene("opening");
+        if(clickrelation.feel == "0")
+        {
+            SceneManager.LoadScene("opening");
+        }
+        
     }
+
+    
 }

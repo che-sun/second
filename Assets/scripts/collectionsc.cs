@@ -50,6 +50,7 @@ public class collectionsc : MonoBehaviour
             if (a1==1)
             {
                 Instantiate(colddead, parent.transform);
+                
             }
             if (a1 == 0)
             {
