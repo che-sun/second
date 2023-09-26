@@ -151,7 +151,7 @@ public class collectionsc : MonoBehaviour
         }
         if (flug9 == true)
         {
-            int a1 = PlayerPrefs.GetInt("proteinpng", 0);
+            int a1 = PlayerPrefs.GetInt("mutekipng", 0);
             if (a1 == 1)
             {
                 Instantiate(proteindead, parent.transform);
