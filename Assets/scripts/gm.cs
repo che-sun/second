@@ -98,7 +98,7 @@ public class gm : MonoBehaviour
     }
     IEnumerator hitodego()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(30);
         while (true)
         {
             if (sibouflug != "")

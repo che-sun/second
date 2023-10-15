@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class protein : MonoBehaviour
 {
-    Animator manbouanimator;
+    
     GameObject player;
     manbou playerscript;
     void Start()
     {
         player = GameObject.Find("manbou");
-        manbouanimator = player.GetComponent<Animator>();
         playerscript = player.GetComponent<manbou>();
+        StartCoroutine("proteinjyumyou");
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("manbou"))
         {
-            manbouanimator.SetBool("kimoka", true);
             playerscript.muteki = true;
+            bgmflug.mutekibgmflug = true;
             Destroy(this.gameObject);
         }
     }

@@ -1,0 +1,502 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.23f1 (213b516bf396) revision 2177873'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ja' Physical Memory: 16055 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/shin1/second
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+61587
+Successfully changed project path to: C:/Users/shin1/second
+C:/Users/shin1/second
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [4868] Host "[IP] 192.168.183.242 [Port] 0 [Flags] 2 [Guid] 949527774 [EditorId] 949527774 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A769AGK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [4868] Host "[IP] 192.168.183.242 [Port] 0 [Flags] 2 [Guid] 949527774 [EditorId] 949527774 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A769AGK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 146.94 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.23f1 (213b516bf396)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/shin1/second/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x46a6)
+    Vendor:   Intel
+    VRAM:     8027 MB
+    Driver:   30.0.101.1631
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005895 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 73.87 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.686 seconds
+Domain Reload Profiling:
+	ReloadAssembly (687ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (467ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (104ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (288ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (74ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005501 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\shin1\second\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\shin1\second\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 72.08 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.211 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1212ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (914ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (297ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (420ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (72ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3799 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (56.5 KB). Loaded Objects now: 4260.
+Memory consumption went from 146.6 MB to 146.6 MB.
+Total: 3.576700 ms (FindLiveObjects: 0.268800 ms CreateObjectMapping: 0.131900 ms MarkObjects: 3.082400 ms  DeleteObjects: 0.092000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 509733.186826 seconds.
+  path: Assets/scripts/bgmflug.cs
+  artifactKey: Guid(8ef6cffadd639db4e8264d78d74e4715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/bgmflug.cs using Guid(8ef6cffadd639db4e8264d78d74e4715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c40e50bea43893308509986cb1984c') in 0.103756 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006986 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\shin1\second\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\shin1\second\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.347 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1347ms)
+		BeginReloadAssembly (209ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1003ms)
+			LoadAssemblies (138ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (322ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (423ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (279ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.05 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3775 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (24.7 KB). Loaded Objects now: 4263.
+Memory consumption went from 144.1 MB to 144.1 MB.
+Total: 3.263800 ms (FindLiveObjects: 0.334000 ms CreateObjectMapping: 0.145800 ms MarkObjects: 2.733500 ms  DeleteObjects: 0.048500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7.518526 seconds.
+  path: Assets/scripts/opbgm.cs
+  artifactKey: Guid(bae5ec9c2089e5440b368beb318bdf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/opbgm.cs using Guid(bae5ec9c2089e5440b368beb318bdf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '086df310618a9424872631f416a2fc9e') in 0.007856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.878997 seconds.
+  path: Assets/scripts/mainbgm.cs
+  artifactKey: Guid(cfd2f8c16e646fe4ba61ae6c53d2f39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/mainbgm.cs using Guid(cfd2f8c16e646fe4ba61ae6c53d2f39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d6c7cb09349b350e5fbe5af7182a3af') in 0.009157 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004663 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\shin1\second\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\shin1\second\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.198 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1199ms)
+		BeginReloadAssembly (186ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (867ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (238ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (415ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (262ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.16 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3776 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (24.7 KB). Loaded Objects now: 4267.
+Memory consumption went from 144.2 MB to 144.2 MB.
+Total: 2.882400 ms (FindLiveObjects: 0.216400 ms CreateObjectMapping: 0.099700 ms MarkObjects: 2.538100 ms  DeleteObjects: 0.027200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005558 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\shin1\second\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\shin1\second\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.132 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1133ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (883ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (235ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (430ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (273ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.43 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3776 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (24.6 KB). Loaded Objects now: 4270.
+Memory consumption went from 144.2 MB to 144.2 MB.
+Total: 3.572900 ms (FindLiveObjects: 0.249600 ms CreateObjectMapping: 0.118600 ms MarkObjects: 3.133300 ms  DeleteObjects: 0.069500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 358.530446 seconds.
+  path: Assets/resources/acolona.prefab
+  artifactKey: Guid(25523de7bed3dba40a04709e9e9b6d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/acolona.prefab using Guid(25523de7bed3dba40a04709e9e9b6d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bcd4348d04874afa0426de84d6197c9') in 0.200496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/resources/colonapng.prefab
+  artifactKey: Guid(48c5cacb50142b746bbfbf74725de12d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/colonapng.prefab using Guid(48c5cacb50142b746bbfbf74725de12d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fb87235237732ffd9c3f55d19a63022') in 0.019418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/resources/fishdead.prefab
+  artifactKey: Guid(6444415f919ab9c479004c24c1f935aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/fishdead.prefab using Guid(6444415f919ab9c479004c24c1f935aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cbe3c192956030348b0e9e5b6f484b3') in 0.024486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/resources/hitodedead1.prefab
+  artifactKey: Guid(b26bcb8d99611e74fbd6b0c83be8a637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/hitodedead1.prefab using Guid(b26bcb8d99611e74fbd6b0c83be8a637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7970ffc6981290c3884f6049ac799911') in 0.017103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/resources/humanpng.prefab
+  artifactKey: Guid(8c15998288d6e2649a78f069fad40a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/humanpng.prefab using Guid(8c15998288d6e2649a78f069fad40a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b591ebddee703e4f41c90e6cc27ce2') in 0.006802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/resources/ankoupng.prefab
+  artifactKey: Guid(7c64678b58461c04a9d96f8ca2ce4af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/ankoupng.prefab using Guid(7c64678b58461c04a9d96f8ca2ce4af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9fc98b8a756edfecf87bab778982a35') in 0.019351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/resources/lockpng.prefab
+  artifactKey: Guid(989de97283799a54d9e4b547a737c4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/lockpng.prefab using Guid(989de97283799a54d9e4b547a737c4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '516cc134fa5046c8d9b1692d924121fd') in 0.023127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/resources/protein.prefab
+  artifactKey: Guid(2272bce10d9b84a4c867c8653892c0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/protein.prefab using Guid(2272bce10d9b84a4c867c8653892c0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923a85453bcb7098e493a4822c74ae8b') in 0.015828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/resources/proteinpng.prefab
+  artifactKey: Guid(4355066ea537e7d48ae6e091ac15670c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/proteinpng.prefab using Guid(4355066ea537e7d48ae6e091ac15670c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5176a0562b152acaae58068a77e2ea01') in 0.031726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/resources/colddead1.prefab
+  artifactKey: Guid(b756da5ca87bff940b074bf03d417b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/colddead1.prefab using Guid(b756da5ca87bff940b074bf03d417b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180bb9deb82e3b798074205ed6fc8732') in 0.024039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/resources/fishdead1.prefab
+  artifactKey: Guid(f6acb86068d30b44ea5e0ab0f3bbc3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/fishdead1.prefab using Guid(f6acb86068d30b44ea5e0ab0f3bbc3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b5a4b848eb6dab58e49c4d4cd36ab60') in 0.008648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/resources/ankoudead1.prefab
+  artifactKey: Guid(a84acc0b6c4f32c4e805f5b85d678a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/ankoudead1.prefab using Guid(a84acc0b6c4f32c4e805f5b85d678a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6bce3f14f0457f85086204efa0f249') in 0.006426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/resources/jumppng.prefab
+  artifactKey: Guid(45f94aa1f1aeea649863904f50d5a9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/jumppng.prefab using Guid(45f94aa1f1aeea649863904f50d5a9f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '191802435cf60bddd3994f61720d7e4b') in 0.005098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/resources/midbuble.prefab
+  artifactKey: Guid(19fac50f549146c4099fd8bb9844e593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/midbuble.prefab using Guid(19fac50f549146c4099fd8bb9844e593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eacb6922a552b98577aa6585e3b8c17') in 0.021456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/resources/jumpdead.prefab
+  artifactKey: Guid(d236817d0d4effe45b46d3fad8938714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/jumpdead.prefab using Guid(d236817d0d4effe45b46d3fad8938714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48a1a4482c4b884768266e6d9862cc01') in 0.015144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/resources/proteindead1.prefab
+  artifactKey: Guid(db9d33579afe5e2498525a71b9cd099b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/proteindead1.prefab using Guid(db9d33579afe5e2498525a71b9cd099b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2695e27569259ed13bf62ff97f4b067d') in 0.006186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/resources/colddead.prefab
+  artifactKey: Guid(a3b25ca7e8b111f4288e05eb69b8b39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/colddead.prefab using Guid(a3b25ca7e8b111f4288e05eb69b8b39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9377055ced37ef47fa391bcfced85a44') in 0.015235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/resources/hitodepng.prefab
+  artifactKey: Guid(36002aa0cceef004392ad9a838042e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/hitodepng.prefab using Guid(36002aa0cceef004392ad9a838042e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6e5cc2b9cd9d95b5390d998d8a35bd') in 0.005630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/resources/proteindead.prefab
+  artifactKey: Guid(d244912c70c461f4bb168e4d08a0fec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/proteindead.prefab using Guid(d244912c70c461f4bb168e4d08a0fec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b52e397f3621f1d37b209068d6d0fac') in 0.018741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/resources/coldpng.prefab
+  artifactKey: Guid(4f1123368efad4547a4575e5e82cfa9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/coldpng.prefab using Guid(4f1123368efad4547a4575e5e82cfa9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ccd98f3bca98190cd3d9ad2d4f0f43d') in 0.014685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/resources/fishpng.prefab
+  artifactKey: Guid(2e90b58cce8b6fb409497038340a508d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/fishpng.prefab using Guid(2e90b58cce8b6fb409497038340a508d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '576b501421f7686afbe7855e3a4e44d8') in 0.008859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/resources/human.prefab
+  artifactKey: Guid(9d197c9278c5d0449b26f5bafdfa3613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/human.prefab using Guid(9d197c9278c5d0449b26f5bafdfa3613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86969eaf1a6ab87eec7797039a701273') in 0.019447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.722094 seconds.
+  path: Assets/resources/sharkdead.prefab
+  artifactKey: Guid(feb07fcb5a9e8fb4c97a12f5d7cb0b0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/sharkdead.prefab using Guid(feb07fcb5a9e8fb4c97a12f5d7cb0b0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a321ec58fe0bf5c976c3d16202cb961') in 0.043477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/resources/tennohikari.prefab
+  artifactKey: Guid(cd7a7fc97d1bd0a449e60a1ad49e04d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resources/tennohikari.prefab using Guid(cd7a7fc97d1bd0a449e60a1ad49e04d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f442a2d0df34eb4efc5fc864afb7282e') in 0.032221 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
