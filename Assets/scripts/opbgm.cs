@@ -6,7 +6,7 @@ public class opbgm : MonoBehaviour
 {
     public AudioSource m_audioIntro;
     public AudioSource m_audioLoop;
-
+    float volumevalue;
     // BGMÉfÅ[É^
     public AudioClip m_intro;
     public AudioClip m_loop;
@@ -30,6 +30,8 @@ public class opbgm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        volumevalue = PlayerPrefs.GetFloat("volume", 0.5f);
+        m_audioIntro.volume = volumevalue;
+        m_audioLoop.volume = volumevalue;
     }
 }

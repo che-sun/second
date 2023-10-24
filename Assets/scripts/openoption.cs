@@ -5,14 +5,15 @@ using UnityEngine;
 public class openoption : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    GameObject optionpanel;
+    GameObject parent;
+    private void Start()
     {
-        
+        parent = GameObject.Find("MainPannel");
+        optionpanel = (GameObject)Resources.Load("optionPanel");
     }
-
-    // Update is called once per frame
-    void Update()
+    public void OnClick()
     {
-        
+        Instantiate(optionpanel, parent.transform);
     }
 }

@@ -33,39 +33,79 @@ public class manbou : MonoBehaviour
     }
     void playercontroller()
     {
-        if (Input.GetKey(KeyCode.W) == true)
+        if (PlayerPrefs.GetInt("wasd", 0) == 1)
         {
-            rb.velocity = new Vector2(0, 10);
+            if (Input.GetKey(KeyCode.W) == true)
+            {
+                rb.velocity = new Vector2(0, 10);
+            }
+            if (Input.GetKey(KeyCode.A) == true)
+            {
+                rb.velocity = new Vector2(-10, 0);
+                sr.flipX = false;
+            }
+            if (Input.GetKey(KeyCode.S) == true)
+            {
+                rb.velocity = new Vector2(0, -10);
+            }
+            if (Input.GetKey(KeyCode.D) == true)
+            {
+                rb.velocity = new Vector2(10, 0);
+                sr.flipX = true;
+            }
+            if (Input.GetKey(KeyCode.W) == true && Input.GetKey(KeyCode.A) == true)
+            {
+                rb.velocity = new Vector2(-10, 10);
+            }
+            if (Input.GetKey(KeyCode.W) == true && Input.GetKey(KeyCode.D) == true)
+            {
+                rb.velocity = new Vector2(10, 10);
+            }
+            if (Input.GetKey(KeyCode.S) == true && Input.GetKey(KeyCode.A) == true)
+            {
+                rb.velocity = new Vector2(-10, -10);
+            }
+            if (Input.GetKey(KeyCode.S) == true && Input.GetKey(KeyCode.D) == true)
+            {
+                rb.velocity = new Vector2(10, -10);
+            }
         }
-        if (Input.GetKey(KeyCode.A) == true)
+        if (PlayerPrefs.GetInt("wasd", 0) == 0)
         {
-            rb.velocity = new Vector2(-10, 0);
-            sr.flipX = false;
-        }
-        if (Input.GetKey(KeyCode.S) == true)
-        {
-            rb.velocity = new Vector2(0, -10);
-        }
-        if (Input.GetKey(KeyCode.D) == true)
-        {
-            rb.velocity = new Vector2(10, 0);
-            sr.flipX = true;
-        }
-        if (Input.GetKey(KeyCode.W) == true && Input.GetKey(KeyCode.A) == true)
-        {
-            rb.velocity = new Vector2(-10, 10);
-        }
-        if (Input.GetKey(KeyCode.W) == true && Input.GetKey(KeyCode.D) == true)
-        {
-            rb.velocity = new Vector2(10, 10);
-        }
-        if (Input.GetKey(KeyCode.S) == true && Input.GetKey(KeyCode.A) == true)
-        {
-            rb.velocity = new Vector2(-10, -10);
-        }
-        if (Input.GetKey(KeyCode.S) == true && Input.GetKey(KeyCode.D) == true)
-        {
-            rb.velocity = new Vector2(10, -10);
+            if (Input.GetKey(KeyCode.UpArrow) == true)
+            {
+                rb.velocity = new Vector2(0, 10);
+            }
+            if (Input.GetKey(KeyCode.LeftArrow) == true)
+            {
+                rb.velocity = new Vector2(-10, 0);
+                sr.flipX = false;
+            }
+            if (Input.GetKey(KeyCode.DownArrow) == true)
+            {
+                rb.velocity = new Vector2(0, -10);
+            }
+            if (Input.GetKey(KeyCode.RightArrow) == true)
+            {
+                rb.velocity = new Vector2(10, 0);
+                sr.flipX = true;
+            }
+            if (Input.GetKey(KeyCode.UpArrow) == true && Input.GetKey(KeyCode.LeftArrow) == true)
+            {
+                rb.velocity = new Vector2(-10, 10);
+            }
+            if (Input.GetKey(KeyCode.UpArrow) == true && Input.GetKey(KeyCode.RightArrow) == true)
+            {
+                rb.velocity = new Vector2(10, 10);
+            }
+            if (Input.GetKey(KeyCode.DownArrow) == true && Input.GetKey(KeyCode.LeftArrow) == true)
+            {
+                rb.velocity = new Vector2(-10, -10);
+            }
+            if (Input.GetKey(KeyCode.DownArrow) == true && Input.GetKey(KeyCode.RightArrow) == true)
+            {
+                rb.velocity = new Vector2(10, -10);
+            }
         }
     }
     void OnTriggerEnter2D(Collider2D other)

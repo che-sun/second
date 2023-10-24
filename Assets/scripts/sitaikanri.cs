@@ -14,6 +14,7 @@ public class sitaikanri : MonoBehaviour
     Transform asitai3trans;
     public AudioSource m_audioIntro;
     public AudioClip m_intro;
+    float volumevalue;
     gm gm;
     bool flug1 = false;
     bool flug2 = false;
@@ -68,6 +69,8 @@ public class sitaikanri : MonoBehaviour
         // Update is called once per frame
     void Update()
     {
+        volumevalue = PlayerPrefs.GetFloat("volume", 0.5f);
+        m_audioIntro.volume = volumevalue;
         if ((Time.time - time1) <= 2&&flug1==true)
         {
             float present_Location = Mathf.Clamp01((Time.time - time1) / 2);

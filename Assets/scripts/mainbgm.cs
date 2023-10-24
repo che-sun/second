@@ -7,7 +7,7 @@ public class mainbgm : MonoBehaviour
     // Start is called before the first frame update
     public AudioSource main;
     public AudioSource muki;
-
+    float volumevalue;
     // BGMÉfÅ[É^
     public AudioClip mainclip;
     public AudioClip mukiclip;
@@ -24,7 +24,9 @@ public class mainbgm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        volumevalue = PlayerPrefs.GetFloat("volume", 0.5f);
+        main.volume = volumevalue;
+        muki.volume = volumevalue;
         if (bgmflug.mutekibgmflug == false&&flug1==false)
         {
             main.Play();
