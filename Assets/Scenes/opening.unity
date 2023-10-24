@@ -456,7 +456,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8A2D\u5B9A"
+  m_Text: "\u305B\u3063\u3066\u3044"
 --- !u!222 &363205871
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1807,6 +1807,7 @@ GameObject:
   - component: {fileID: 1734067559}
   - component: {fileID: 1734067558}
   - component: {fileID: 1734067557}
+  - component: {fileID: 1734067560}
   m_Layer: 0
   m_Name: Startbutton
   m_TagString: Untagged
@@ -1929,6 +1930,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734067555}
   m_CullTransparentMesh: 1
+--- !u!114 &1734067560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734067555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4a34717dfff664681cce18f8e9c7bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioObject: {fileID: 0}
 --- !u!1 &1790945075
 GameObject:
   m_ObjectHideFlags: 0
