@@ -156,5 +156,16 @@ public class um : MonoBehaviour
             }
             flug2 = false;
         }
+        if (gm.sibouflug == "colona-a" && flug == true && flug2 == true)
+        {
+            siin_text.text = "コロナに感染して死んだ。海洋生物ってコロナ感染とかするんか？...(※寄生虫に突破されるバリアなんだからウイルスなんて防護できないに決まってんだろ)";
+            Instantiate(colonadead, new Vector2(0, 0.7f), Quaternion.Euler(0, 0, 0));
+            if (PlayerPrefs.HasKey("colonapng") == false)
+            {
+                PlayerPrefs.SetInt("colonapng", 1);
+                PlayerPrefs.Save();
+            }
+            flug2 = false;
+        }
     }
 }

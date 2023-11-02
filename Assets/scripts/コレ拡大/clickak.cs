@@ -12,8 +12,6 @@ public class clickak : MonoBehaviour
     {
         ankoudead1 = (GameObject)Resources.Load("ankoudead1");
         canvas = GameObject.Find("Canvas");
-
-
     }
 
     // Update is called once per frame

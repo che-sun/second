@@ -7,7 +7,7 @@ public class MoveScene : MonoBehaviour
 {
         public void OnClick()
         {
-            SceneManager.LoadScene("gamescene");
+            SceneManager.LoadScene("Chara");
         }
    
 }

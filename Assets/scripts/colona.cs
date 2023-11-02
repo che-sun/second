@@ -71,6 +71,11 @@ public class colona : MonoBehaviour
             gm.sibouflug = "colona";
             SceneManager.LoadScene("sibougenba");
         }
+        if (other.CompareTag("baria"))
+        {
+            gm.sibouflug = "colona-a";
+            SceneManager.LoadScene("sibougenba");
+        }
         if (other.CompareTag("muteki"))
         {
             time1 = Time.time;

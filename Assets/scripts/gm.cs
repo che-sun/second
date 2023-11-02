@@ -90,11 +90,10 @@ public class gm : MonoBehaviour
             {
                 yield break;
             }
-            manboupos = manboutrans.position;
+                manboupos = manboutrans.position;
                 Instantiate(shark, new Vector2(manboupos.x + 50, 0), Quaternion.Euler(0, 0, 0));
                 yield return new WaitForSeconds(15);
-        }
-            
+        }  
     }
     IEnumerator hitodego()
     {

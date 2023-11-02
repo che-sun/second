@@ -9,6 +9,10 @@ public class sitaikanri : MonoBehaviour
     GameObject sitai2;
     GameObject sitai3;
     GameObject asitai3;
+    GameObject huryousitai;
+    GameObject queensitai;
+    GameObject rougaisitai;
+    GameObject huryousitai2;
     GameObject gamemaster;
     Transform asitai1trans;
     Transform asitai3trans;
@@ -29,6 +33,10 @@ public class sitaikanri : MonoBehaviour
         sitai1 = (GameObject)Resources.Load("manbousitai1");
         sitai2 = (GameObject)Resources.Load("manbousitai2");
         sitai3 = (GameObject)Resources.Load("manbousitai3");
+        huryousitai = (GameObject)Resources.Load("huryousitai");
+        queensitai = (GameObject)Resources.Load("queensitai");
+        rougaisitai = (GameObject)Resources.Load("rougaisitai");
+        huryousitai2 = (GameObject)Resources.Load("huryousitai2");
         gamemaster = GameObject.Find("gamemaster");
         gm = gamemaster.GetComponent<gm>();
         sibouba = gm.siboubasyo;
@@ -36,17 +44,53 @@ public class sitaikanri : MonoBehaviour
     }
     IEnumerator sibou()
     {
-        
-        Instantiate(sitai1, new Vector2(0, sibouba.y), Quaternion.Euler(0, 0, 0));
+        if (PlayerPrefs.GetInt("huryoupick", 0) == 1)
+        {
+            Instantiate(huryousitai, new Vector2(0, sibouba.y), Quaternion.Euler(0, 0, 0));
+        }
+        if (PlayerPrefs.GetInt("manpick", 0) == 1)
+        {
+            Instantiate(sitai1, new Vector2(0, sibouba.y), Quaternion.Euler(0, 0, 0));
+        }
+        if (PlayerPrefs.GetInt("rougaipick", 0) == 1)
+        {
+            Instantiate(rougaisitai, new Vector2(0, sibouba.y), Quaternion.Euler(0, 0, 0));
+        }
+        if (PlayerPrefs.GetInt("queenpick", 0) == 1)
+        {
+            Instantiate(queensitai, new Vector2(0, sibouba.y), Quaternion.Euler(0, 0, 0));
+        }
         yield return new WaitForSeconds(1);
-        asitai1 = GameObject.Find("manbousitai1(Clone)");
+        if (PlayerPrefs.GetInt("huryoupick", 0) == 1)
+        {
+            asitai1 = GameObject.Find("huryousitai(Clone)");
+        }
+        if (PlayerPrefs.GetInt("manpick", 0) == 1)
+        {
+            asitai1 = GameObject.Find("manbousitai1(Clone)");
+        }
+        if (PlayerPrefs.GetInt("rougaipick", 0) == 1)
+        {
+            asitai1 = GameObject.Find("rougaisitai(Clone)");
+        }
+        if (PlayerPrefs.GetInt("queenpick", 0) == 1)
+        {
+            asitai1 = GameObject.Find("queensitai(Clone)");
+        }
         asitai1trans = asitai1.GetComponent<Transform>();
         time1 = Time.time;
         flug1 = true;
         yield return new WaitForSeconds(2);
         flug1 = false;
         Destroy(asitai1);
-        Instantiate(sitai2, new Vector2(0, 0), Quaternion.Euler(0, 0, 0));
+        if (PlayerPrefs.GetInt("huryoupick", 0) != 1)
+        {
+            Instantiate(sitai2, new Vector2(0, 0), Quaternion.Euler(0, 0, 0));
+        }
+        if (PlayerPrefs.GetInt("huryoupick", 0) == 1)
+        {
+            Instantiate(huryousitai2, new Vector2(0, 0), Quaternion.Euler(0, 0, 0));
+        }
         yield return new WaitForSeconds(0.5f);
         m_audioIntro.clip = m_intro;
         m_audioIntro.time = 1.5f;
