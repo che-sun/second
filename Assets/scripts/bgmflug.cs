@@ -8,4 +8,5 @@ public class bgmflug : MonoBehaviour
     public static bool loopflug=false;
     public static bool mutekibgmflug = false;
     public static bool flip = false;
+    public static int hardflug = 0;
 }

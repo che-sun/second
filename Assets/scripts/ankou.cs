@@ -48,6 +48,12 @@ public class ankou : MonoBehaviour
             flug1 = true;
             
         }
+        if (other.CompareTag("tan"))
+        {
+            time1 = Time.time;
+            flug1 = true;
+
+        }
     }
     IEnumerator ankoujyumyou()
     {

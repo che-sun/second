@@ -9,12 +9,17 @@ public class shark : MonoBehaviour
     gm gm;
     bool flug1=false;
     float time1;
+    int a=1;
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         gamemaster = GameObject.Find("gamemaster");
         gm = gamemaster.GetComponent<gm>();
         StartCoroutine("sharkjyumyou");
+        if (bgmflug.hardflug >= 10)
+        {
+            a = 2;
+        }
     }
 
     // Update is called once per frame
@@ -22,7 +27,7 @@ public class shark : MonoBehaviour
     {
         if (flug1 == true && Time.time - time1 < 3)
         {
-            rb.velocity = new Vector2(20, 10);
+            rb.velocity = new Vector2(20*a, 10*a);
         }
         if (flug1 == true && Time.time - time1 > 3)
         {
@@ -30,7 +35,7 @@ public class shark : MonoBehaviour
         }
         if (flug1 == false)
         {
-            rb.velocity = new Vector2(-20, 0);
+            rb.velocity = new Vector2(-20*a, 0);
         }
     }
     IEnumerator sharkjyumyou()
@@ -46,6 +51,11 @@ public class shark : MonoBehaviour
             SceneManager.LoadScene("sibougenba");
         }
         if (other.CompareTag("muteki"))
+        {
+            time1 = Time.time;
+            flug1 = true;
+        }
+        if (other.CompareTag("tan"))
         {
             time1 = Time.time;
             flug1 = true;

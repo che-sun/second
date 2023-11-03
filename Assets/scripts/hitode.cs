@@ -78,5 +78,11 @@ public class hitode : MonoBehaviour
             hcollider.enabled = false;
             flug1 = true;
         }
+        if (collision.gameObject.tag == "tan")
+        {
+            time1 = Time.time;
+            hcollider.enabled = false;
+            flug1 = true;
+        }
     }
 }

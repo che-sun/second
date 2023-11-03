@@ -11,6 +11,7 @@ public class fish : MonoBehaviour
     GameObject player;
     float time1;
     bool flug1=false;
+    int a=1;
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
@@ -19,6 +20,10 @@ public class fish : MonoBehaviour
         player = GameObject.Find("manbou");
         manboutrans = player.GetComponent<Transform>();
         StartCoroutine("fishjyumyou");
+        if (bgmflug.hardflug >= 10)
+        {
+            a = 2;
+        }
     }
 
     // Update is called once per frame
@@ -26,11 +31,11 @@ public class fish : MonoBehaviour
     {
         if (flug1 == false)
         {
-            rb.velocity = new Vector2(20, 0);
+            rb.velocity = new Vector2(20*a, 0);
         }
         if (flug1 == true && Time.time - time1 < 3)
         {
-            rb.velocity = new Vector2(-20, 10);
+            rb.velocity = new Vector2(-20*a, 10*a);
         }
         if (flug1 == true && Time.time - time1 > 3)
         {
@@ -51,6 +56,11 @@ public class fish : MonoBehaviour
             SceneManager.LoadScene("sibougenba");
         }
         if (other.CompareTag("muteki"))
+        {
+            time1 = Time.time;
+            flug1 = true;
+        }
+        if (other.CompareTag("tan"))
         {
             time1 = Time.time;
             flug1 = true;

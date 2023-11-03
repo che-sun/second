@@ -38,6 +38,7 @@ public class um : MonoBehaviour
         proteindead = (GameObject)Resources.Load("proteindead");
         colonadead = (GameObject)Resources.Load("colonadead");
         ankoudead = (GameObject)Resources.Load("ankoudead");
+        bgmflug.hardflug = 0;
     }
     void Update()
     {
@@ -167,5 +168,17 @@ public class um : MonoBehaviour
             }
             flug2 = false;
         }
+        if (gm.sibouflug == "colona-b" && flug == true && flug2 == true)
+        {
+            siin_text.text = "コロナに感染して死んだ。海洋生物ってコロナ感染とかするんか？...(※ウイルスに嗅覚あるわけないだろ)";
+            Instantiate(colonadead, new Vector2(0, 0.7f), Quaternion.Euler(0, 0, 0));
+            if (PlayerPrefs.HasKey("colonapng") == false)
+            {
+                PlayerPrefs.SetInt("colonapng", 1);
+                PlayerPrefs.Save();
+            }
+            flug2 = false;
+        }
+
     }
 }

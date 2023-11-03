@@ -402,7 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -788,8 +788,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=yellow>\u30D7\u30ED\u30B0\u30E9\u30E0\n\n \u30A4\u30E9\u30B9\u30C8\n\n
-    \u30B5\u30A6\u30F3\u30C9\n\n\u30A8\u30D5\u30A7\u30AF\u30C8</color>"
+  m_Text: "<color=yellow>\u30D7\u30ED\u30B0\u30E9\u30E0\n\n \u30A4\u30E9\u30B9\u30C8\n\n\u30B5\u30A6\u30F3\u30C9\n\n\u30A8\u30D5\u30A7\u30AF\u30C8</color>"
 --- !u!222 &1718794018
 CanvasRenderer:
   m_ObjectHideFlags: 0

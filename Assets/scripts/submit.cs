@@ -17,6 +17,7 @@ public class submit : MonoBehaviour
     GameObject score;
     Text score_text;
     bool flug=false;
+    float a;
     void Start()
     {
         gamemaster = GameObject.Find("gamemaster");
@@ -29,10 +30,21 @@ public class submit : MonoBehaviour
         score = GameObject.Find("time");
         score_text = score.GetComponent<Text>();
         bgmflug.loopflug = true;
+        if (PlayerPrefs.GetInt("rougaipick", 0) == 1)
+        {
+            a = gm.timer;
+        }
     }
     void Update()
     {
-        score_text.text = "タイム：" + gm.timer;
+        if(PlayerPrefs.GetInt("rougaipick", 0) == 1)
+        {
+            score_text.text = "タイム：" + a+"+10(※老害の不正)";
+        }
+        if (PlayerPrefs.GetInt("rougaipick", 0) != 1)
+        {
+            score_text.text = "タイム：" + gm.timer;
+        }
         gm.namepack = nameinputField.text;
         gm.commentpack = commentinputField.text;
         if (flug == true)
@@ -51,6 +63,10 @@ public class submit : MonoBehaviour
 
         WWWForm form = new WWWForm();
         form.AddField("name", gm.namepack);
+        if (PlayerPrefs.GetInt("rougaipick", 0) == 1)
+        {
+            gm.timer = gm.timer + 10;
+        }
         form.AddField("time", gm.timer.ToString());
         form.AddField("comment", gm.commentpack);
         UnityWebRequest request = UnityWebRequest.Post(url, form);
